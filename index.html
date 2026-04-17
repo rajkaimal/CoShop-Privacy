@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoShop &mdash; Privacy Policy</title>
+    <style>
+        :root {
+            --accent: #34C759;
+            --bg: #FAFAFA;
+            --card: #FFFFFF;
+            --text: #1D1D1F;
+            --secondary: #6E6E73;
+            --border: #E5E5EA;
+            --radius: 16px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0A0A0A;
+                --card: #1C1C1E;
+                --text: #F5F5F7;
+                --secondary: #A1A1A6;
+                --border: #38383A;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--accent), #30B854);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(52, 199, 89, 0.3);
+        }
+
+        .app-icon svg {
+            width: 36px;
+            height: 36px;
+            fill: white;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
+        }
+
+        .hero .subtitle {
+            font-size: 17px;
+            color: var(--secondary);
+        }
+
+        .hero .updated {
+            font-size: 13px;
+            color: var(--secondary);
+            margin-top: 8px;
+        }
+
+        .summary {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 40px;
+        }
+
+        .summary p {
+            font-size: 17px;
+            font-weight: 500;
+            text-align: center;
+            color: var(--text);
+        }
+
+        .summary .highlight {
+            color: var(--accent);
+        }
+
+        section {
+            margin-bottom: 36px;
+        }
+
+        section h2 {
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        section h2 .icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        section h2 .icon svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .icon-green { background: rgba(52, 199, 89, 0.15); }
+        .icon-green svg { fill: var(--accent); }
+
+        .icon-blue { background: rgba(0, 122, 255, 0.15); }
+        .icon-blue svg { fill: #007AFF; }
+
+        .icon-orange { background: rgba(255, 149, 0, 0.15); }
+        .icon-orange svg { fill: #FF9500; }
+
+        .icon-purple { background: rgba(175, 82, 222, 0.15); }
+        .icon-purple svg { fill: #AF52DE; }
+
+        .icon-red { background: rgba(255, 59, 48, 0.15); }
+        .icon-red svg { fill: #FF3B30; }
+
+        .icon-teal { background: rgba(90, 200, 250, 0.15); }
+        .icon-teal svg { fill: #5AC8FA; }
+
+        section p {
+            font-size: 15px;
+            color: var(--secondary);
+            margin-bottom: 12px;
+        }
+
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        @media (max-width: 480px) {
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .data-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .data-card .label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--secondary);
+            margin-bottom: 4px;
+        }
+
+        .data-card .value {
+            font-size: 15px;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 6px;
+            margin-top: 6px;
+        }
+
+        .badge-green {
+            background: rgba(52, 199, 89, 0.15);
+            color: #34C759;
+        }
+
+        .badge-blue {
+            background: rgba(0, 122, 255, 0.15);
+            color: #007AFF;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        td {
+            color: var(--secondary);
+        }
+
+        .footer {
+            margin-top: 56px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: var(--secondary);
+            margin-bottom: 6px;
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="app-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.16 6.26l-.86-1.76H3v2h2l3.6 7.59-1.35 2.44C6.46 17.7 7.28 19 8.54 19H19v-2H8.54l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.54 6H5.21l-.94-1.93C4.09 3.69 3.55 3.5 3.15 3.68c-.4.19-.57.66-.38 1.06l.86 1.76L7.16 6.26z"/>
+                </svg>
+            </div>
+            <h1>CoShop</h1>
+            <div class="subtitle">Privacy Policy</div>
+            <div class="updated">Last updated: April 16, 2026</div>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary">
+            <p><span class="highlight">No servers. No accounts. No tracking.</span><br>
+            Your data stays on your devices and in your iCloud.</p>
+        </div>
+
+        <!-- Section: What We Collect -->
+        <section>
+            <h2>
+                <span class="icon icon-green">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                </span>
+                What We Collect
+            </h2>
+            <p>CoShop collects <strong>no personal data</strong>. We have no servers, no analytics, no advertising SDKs, and no way to see what you buy.</p>
+            <p>The app stores your shopping list items, purchase history, and display name locally on your device and syncs them through your personal iCloud account using Apple's CloudKit framework.</p>
+        </section>
+
+        <!-- Section: Data Storage -->
+        <section>
+            <h2>
+                <span class="icon icon-blue">
+                    <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h.71C7.37 7.69 9.48 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3s-1.34 3-3 3z"/></svg>
+                </span>
+                Data Storage
+            </h2>
+            <p>All data is stored in two places, both controlled by you:</p>
+            <div class="data-grid">
+                <div class="data-card">
+                    <div class="label">On Your Device</div>
+                    <div class="value">Core Data (local database)</div>
+                    <span class="badge badge-green">Encrypted at rest</span>
+                </div>
+                <div class="data-card">
+                    <div class="label">In Your iCloud</div>
+                    <div class="value">Apple CloudKit</div>
+                    <span class="badge badge-blue">Apple managed</span>
+                </div>
+            </div>
+            <p style="margin-top: 16px;">We do not operate any servers. We cannot access your iCloud data. If you delete the app, your local data is deleted. Your iCloud data can be managed through your iCloud account settings.</p>
+        </section>
+
+        <!-- Section: Sharing -->
+        <section>
+            <h2>
+                <span class="icon icon-purple">
+                    <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                </span>
+                Household Sharing
+            </h2>
+            <p>When you share your list with household members, only the people you explicitly invite can see your data. Sharing is powered by Apple's CloudKit sharing infrastructure &mdash; we have no visibility into shared data.</p>
+            <p>Your display name (which you choose) is shared with household members so they can see who added or checked off items. No other personal information is shared.</p>
+        </section>
+
+        <!-- Section: Camera & Photos -->
+        <section>
+            <h2>
+                <span class="icon icon-orange">
+                    <svg viewBox="0 0 24 24"><path d="M12 15.2a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4z"/><path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+                </span>
+                Camera &amp; Photos
+            </h2>
+            <p>CoShop uses the camera to let you photograph items for your shopping list and scan receipts. Photos are stored locally and synced to your iCloud as part of your shopping list data. Photos are compressed (max 512px, JPEG quality 0.5) to minimize storage use.</p>
+            <p>CoShop does not access your photo library. Camera access is requested only when you choose to take a photo.</p>
+        </section>
+
+        <!-- Section: Data Retention -->
+        <section>
+            <h2>
+                <span class="icon icon-red">
+                    <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                </span>
+                Data Retention
+            </h2>
+            <p>To keep your device storage lean, CoShop automatically cleans up older data:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Kept For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Items on your list</td>
+                        <td>Until you delete them</td>
+                    </tr>
+                    <tr>
+                        <td>Purchased items</td>
+                        <td>6 months</td>
+                    </tr>
+                    <tr>
+                        <td>Activity history</td>
+                        <td>90 days</td>
+                    </tr>
+                    <tr>
+                        <td>Buy Again suggestions</td>
+                        <td>Until you dismiss them</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section: Third-Party Services -->
+        <section>
+            <h2>
+                <span class="icon icon-teal">
+                    <svg viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+                </span>
+                Third-Party Services
+            </h2>
+            <p>CoShop uses only Apple's own frameworks:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple CloudKit</td>
+                        <td>Sync &amp; household sharing</td>
+                    </tr>
+                    <tr>
+                        <td>Apple StoreKit</td>
+                        <td>Optional tip jar</td>
+                    </tr>
+                    <tr>
+                        <td>Apple Foundation Models</td>
+                        <td>On-device item parsing (iOS 26+)</td>
+                    </tr>
+                    <tr>
+                        <td>Apple Vision</td>
+                        <td>On-device receipt scanning</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 12px;">No data is sent to third-party servers. AI parsing and receipt scanning run entirely on your device.</p>
+        </section>
+
+        <!-- Section: In-App Purchases -->
+        <section>
+            <h2>
+                <span class="icon icon-green">
+                    <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                </span>
+                In-App Purchases
+            </h2>
+            <p>CoShop offers an optional tip jar with three tiers. These are one-time consumable purchases processed entirely by Apple. We do not collect or store any payment information. All transactions are handled through your Apple ID.</p>
+        </section>
+
+        <!-- Section: Children -->
+        <section>
+            <h2>
+                <span class="icon icon-blue">
+                    <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </span>
+                Children's Privacy
+            </h2>
+            <p>CoShop does not knowingly collect any personal information from anyone, including children under 13. The app contains no advertising, no social features beyond household sharing, and no user accounts.</p>
+        </section>
+
+        <!-- Section: Your Rights -->
+        <section>
+            <h2>
+                <span class="icon icon-purple">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                </span>
+                Your Rights &amp; Control
+            </h2>
+            <p>Since all data is stored on your device and in your personal iCloud account, you have full control:</p>
+            <p><strong>Delete your data:</strong> Use Settings &rarr; Manage Data inside the app, or simply delete the app to remove all local data.</p>
+            <p><strong>Manage iCloud data:</strong> Go to iOS Settings &rarr; [your name] &rarr; iCloud &rarr; Manage Storage to view and delete CoShop's iCloud data.</p>
+            <p><strong>Leave a shared list:</strong> Use Settings &rarr; Members &rarr; Leave Household. Your items remain on your device.</p>
+        </section>
+
+        <!-- Section: Changes -->
+        <section>
+            <h2>
+                <span class="icon icon-orange">
+                    <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+                </span>
+                Changes to This Policy
+            </h2>
+            <p>If we update this privacy policy, we will post the revised version at this URL with a new "Last updated" date. Since CoShop collects no personal data, meaningful changes are unlikely.</p>
+        </section>
+
+        <!-- Section: Contact -->
+        <section>
+            <h2>
+                <span class="icon icon-teal">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </span>
+                Contact
+            </h2>
+            <p>Questions about this privacy policy? Reach out via the feedback form linked below or the <strong>Send Feedback</strong> button in the app.</p>
+            <p><a href="https://forms.gle/RNdzPeoYFdbgwpku6" style="color: var(--accent); text-decoration: none;">Send Feedback</a></p>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Made by Raj in Austin, TX</p>
+            <p>&copy; 2026 RK Inc. All rights reserved.</p>
+        </div>
+
+    </div>
+</body>
+</html>
