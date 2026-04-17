@@ -54,18 +54,15 @@
             width: 72px;
             height: 72px;
             border-radius: 16px;
-            background: linear-gradient(135deg, var(--accent), #30B854);
             display: inline-flex;
-            align-items: center;
-            justify-content: center;
             margin-bottom: 16px;
-            box-shadow: 0 4px 12px rgba(52, 199, 89, 0.3);
+            overflow: hidden;
         }
 
-        .app-icon svg {
-            width: 36px;
-            height: 36px;
-            fill: white;
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .hero h1 {
@@ -270,9 +267,7 @@
         <!-- Hero -->
         <div class="hero">
             <div class="app-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.16 6.26l-.86-1.76H3v2h2l3.6 7.59-1.35 2.44C6.46 17.7 7.28 19 8.54 19H19v-2H8.54l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.54 6H5.21l-.94-1.93C4.09 3.69 3.55 3.5 3.15 3.68c-.4.19-.57.66-.38 1.06l.86 1.76L7.16 6.26z"/>
-                </svg>
+                <img src="icon.png" alt="CoShop app icon">
             </div>
             <h1>CoShop</h1>
             <div class="subtitle">Privacy Policy</div>
